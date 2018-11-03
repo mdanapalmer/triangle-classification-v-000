@@ -23,7 +23,7 @@ def triangle?
   end
 end
 
-def TriangleError < StandardError
+class TriangleError < StandardError
   puts "A Triangle cannot have 0 as a value for all sides"
   end
 end
