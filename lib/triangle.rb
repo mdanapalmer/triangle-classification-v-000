@@ -20,7 +20,7 @@ class Triangle
 def triangle?
   if @a == 0 && @b == 0 && @c == 0 ||
     @a < 0 || @b < 0 || @c < 0 ||
-    [@a,@b,@c].max < [@a,@b,@c].sum/2
+    @a + @b < @c || @a + @c < @b || @c + @b < @a
     raise TriangleError
   end
 end
