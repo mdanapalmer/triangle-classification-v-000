@@ -19,7 +19,7 @@ class Triangle
 
 def triangle?
   if @a == 0 && @b == 0 && @c == 0 ||
-    @a < 0 || @b <0 || @c <0
+    @a < 0 || @b < 0 || @c < 0
     raise TriangleError
   end
 end
