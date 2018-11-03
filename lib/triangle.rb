@@ -24,5 +24,6 @@ end
 def TriangleError < StandardError
   puts "A Triangle cannot have 0 as a value for all sides"
 end
+end
 
 end
