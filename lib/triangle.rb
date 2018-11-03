@@ -15,4 +15,15 @@ class Triangle
       :scalene
     end
   end
+
+def triangle?
+  if @a == 0 && @b == 0 && @c == 0
+    raise TriangleError
+
+end
+
+def TriangleError < StandardError
+  puts "A Triangle cannot have 0 as a value for all sides"
+end
+
 end
